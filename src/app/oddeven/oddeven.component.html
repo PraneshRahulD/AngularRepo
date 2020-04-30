@@ -1,0 +1,5 @@
+<div *ngFor="let id of ids">
+        <div *ngIf="id%2==0; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>{{id}} is Even</ng-template>
+        <ng-template #elseBlock>{{id}} is Odd</ng-template>
+</div>
